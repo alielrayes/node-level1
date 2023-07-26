@@ -1,0 +1,14 @@
+
+
+name & schema
+
+{
+  fireName: ssssssssssss,
+  lastName: ssssssssssss,
+  email: sssssssssss,
+  phoneNumber: sssssssss,
+  age: sssssssssssss,
+  country: sssssssssss,
+  gender: ssssssss,
+
+}
