@@ -4,7 +4,6 @@
   model.findById("64c084e1ba1c09af7a125c58)
 
 [
-
   {
     _id: new ObjectId("64c084e1ba1c09af7a125c58"),
     fireName: 'ali',
@@ -16,7 +15,6 @@
     gender: 'Male',
     __v: 0
   },
-
   {
     _id: new ObjectId("64c08537ba1c09af7a125c5a"),
     fireName: 'salma',
@@ -27,7 +25,18 @@
     country: 'Egypt',
     gender: 'Female',
     __v: 0
+  },
+  {
+    _id: new ObjectId("64c19ada9b669c92cdb61ea2"),
+    fireName: 'Layla',
+    lastName: 'hassan',
+    email: 'Layla@gmail.com',
+    phoneNumber: '8582785278',
+    age: 55,
+    country: 'Egypt',
+    gender: 'Female',
+    createdAt: 2023-07-26T22:14:50.894Z,
+    updatedAt: 2023-07-26T22:14:50.894Z,
+    __v: 0
   }
-
-  
 ]
