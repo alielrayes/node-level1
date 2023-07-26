@@ -1,14 +1,31 @@
 
 
-name & schema
 
-{
-  fireName: ssssssssssss,
-  lastName: ssssssssssss,
-  email: sssssssssss,
-  phoneNumber: sssssssss,
-  age: sssssssssssss,
-  country: sssssssssss,
-  gender: ssssssss,
+[
 
-}
+  {
+    _id: new ObjectId("64c084e1ba1c09af7a125c58"),
+    fireName: 'ali',
+    lastName: 'hassan',
+    email: 'ali@gmail.com',
+    phoneNumber: '58500000000',
+    age: 25,
+    country: 'Morocco',
+    gender: 'Male',
+    __v: 0
+  },
+
+  {
+    _id: new ObjectId("64c08537ba1c09af7a125c5a"),
+    fireName: 'salma',
+    lastName: 'hassan',
+    email: 'salma@gmail.com',
+    phoneNumber: '54816102',
+    age: 20,
+    country: 'Egypt',
+    gender: 'Female',
+    __v: 0
+  }
+
+  
+]
