@@ -3,6 +3,14 @@
   model.find() ==> to get all data from DB
   model.findById("64c084e1ba1c09af7a125c58)
 
+
+
+  model.findByIdDelete("64c084e1ba1c09af7a125c58") ==> Delete Request
+  model.deleteOne({_id: req.params.id})  ==> Delete Request
+
+
+
+
 [
   {
     _id: new ObjectId("64c084e1ba1c09af7a125c58"),
