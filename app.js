@@ -44,16 +44,12 @@ app.get("/user/add.html", (req, res) => {
 
 app.get("/edit/:id", (req, res) => {
   User.findById(req.params.id)
-  .then((result) => {
-    res.render("user/edit", { obj: result, moment: moment });
-  })
-  .catch((err) => {
-    console.log(err);
-  });
-
-
-
- 
+    .then((result) => {
+      res.render("user/edit", { obj: result, moment: moment });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 });
 
 app.get("/view/:id", (req, res) => {
@@ -69,9 +65,7 @@ app.get("/view/:id", (req, res) => {
 
 // POST Requst
 app.post("/user/add.html", (req, res) => {
-  const user = new User(req.body);
-  user
-    .save()
+  User.create(req.body)
     .then(() => {
       res.redirect("/");
     })
@@ -82,10 +76,21 @@ app.post("/user/add.html", (req, res) => {
 
 // DELETE Request
 app.delete("/edit/:id", (req, res) => {
-  User.deleteOne({_id: req.params.id})
+  User.deleteOne({ _id: req.params.id })
     .then((result) => {
       res.redirect("/");
-      console.log(result)
+      console.log(result);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
+// PUT Requst
+app.put("/edit/:id", (req, res) => {
+  User.updateOne({ _id: req.params.id }, req.body)
+    .then((result) => {
+      res.redirect("/");
     })
     .catch((err) => {
       console.log(err);

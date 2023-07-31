@@ -57,11 +57,12 @@
 
 
 
-        <form class="mx-0 row gx-3 gy-4 mt-2">
+        <form action="/edit/<%= obj._id %>?_method=PUT" method="post" class="mx-0 row gx-3 gy-4 mt-2">
           <div class="col-md-6">
             <label for="inputfirstName4" class="form-label">First Name:</label>
             <input
               value="<%= obj.fireName %>"
+              name="fireName"
               type="text"
               class="form-control"
               id="inputfirstName4"
@@ -71,6 +72,7 @@
             <label for="inputlastName4" class="form-label">Last Name:</label>
             <input
               value="<%= obj.lastName %>"
+              name="lastName"
               type="text"
               class="form-control"
               id="inputlastName4"
@@ -81,6 +83,7 @@
             <label for="inputemail4" class="form-label">Email:</label>
             <input
             value="<%= obj.email %>"
+            name="email"
               type="email"
               class="form-control"
               id="inputemail4"
@@ -90,6 +93,7 @@
             <label for="inputtele4" class="form-label">Telephone:</label>
             <input
             value="<%= obj.phoneNumber %>"
+            name="phoneNumber"
               type="number"
               class="form-control"
               id="inputtele4"
@@ -101,6 +105,7 @@
               <label for="inputage4" class="form-label">Age:</label>
               <input
               value="<%= obj.age %>"
+              name="age"
                 type="number"
                 class="form-control"
                 id="inputage4"
@@ -111,7 +116,7 @@
           <div>
             <div class="col-md-6">
               <label for="inputCountry" class="form-label">Country:</label>
-              <select id="inputCountry" class="form-select">
+              <select name="country" id="inputCountry" class="form-select">
                 <option   hidden disabled>Choose here ...</option>
 
 
@@ -129,7 +134,7 @@
           <div>
             <div class="col-md-6">
               <label for="inputGender" class="form-label">Gender:</label>
-              <select id="inputGender" class="form-select">
+              <select name="gender" id="inputGender" class="form-select">
                 <option selected hidden disabled>Choose here ...</option>
                 <option <%= "Male" === obj.gender ? "selected" : null %>>Male</option>
                 <option <%= "Female" === obj.gender ? "selected" : null %>>Female</option>
