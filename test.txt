@@ -11,40 +11,27 @@
 
 
 
-[
+ [
   {
-    _id: new ObjectId("64c084e1ba1c09af7a125c58"),
+    _id: new ObjectId("64c78a16624f2df7ba878fae"),
     fireName: 'ali',
     lastName: 'hassan',
-    email: 'ali@gmail.com',
-    phoneNumber: '58500000000',
-    age: 25,
-    country: 'Morocco',
-    gender: 'Male',
+    email: '',
+    phoneNumber: '',
+    age: 35,
+    createdAt: 2023-07-31T10:16:54.554Z,
+    updatedAt: 2023-07-31T10:16:54.554Z,
     __v: 0
   },
   {
-    _id: new ObjectId("64c08537ba1c09af7a125c5a"),
-    fireName: 'salma',
-    lastName: 'hassan',
-    email: 'salma@gmail.com',
-    phoneNumber: '54816102',
-    age: 20,
-    country: 'Egypt',
-    gender: 'Female',
-    __v: 0
-  },
-  {
-    _id: new ObjectId("64c19ada9b669c92cdb61ea2"),
+    _id: new ObjectId("64c78a2e624f2df7ba878fb1"),
     fireName: 'Layla',
     lastName: 'hassan',
-    email: 'Layla@gmail.com',
-    phoneNumber: '8582785278',
-    age: 55,
-    country: 'Egypt',
-    gender: 'Female',
-    createdAt: 2023-07-26T22:14:50.894Z,
-    updatedAt: 2023-07-26T22:14:50.894Z,
+    email: '',
+    phoneNumber: '',
+    age: 25,
+    createdAt: 2023-07-31T10:17:18.220Z,
+    updatedAt: 2023-07-31T10:17:18.220Z,
     __v: 0
   }
 ]

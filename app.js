@@ -74,6 +74,34 @@ app.post("/user/add.html", (req, res) => {
     });
 });
 
+app.post("/search", (req, res) => {
+  console.log("*******************************");
+  User.find({ $or: [{ fireName: "hassan" }, { lastName: "hassan" }] })
+    .then((result) => {
+      console.log(result);
+      res.render("user/search", { arr: result, moment: moment });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // DELETE Request
 app.delete("/edit/:id", (req, res) => {
   User.deleteOne({ _id: req.params.id })
