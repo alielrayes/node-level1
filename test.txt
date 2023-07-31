@@ -9,9 +9,9 @@
   model.deleteOne({_id: req.params.id})  ==> Delete Request
 
 
+{searchText: VVVVVVVVVVVVVV}
 
-
- [
+[
   {
     _id: new ObjectId("64c78a16624f2df7ba878fae"),
     fireName: 'ali',
@@ -20,8 +20,10 @@
     phoneNumber: '',
     age: 35,
     createdAt: 2023-07-31T10:16:54.554Z,
-    updatedAt: 2023-07-31T10:16:54.554Z,
-    __v: 0
+    updatedAt: 2023-07-31T11:05:04.764Z,
+    __v: 0,
+    country: 'Afghanistan',
+    gender: 'Male'
   },
   {
     _id: new ObjectId("64c78a2e624f2df7ba878fb1"),
