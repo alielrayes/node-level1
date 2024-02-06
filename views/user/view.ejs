@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <script src="../js/color-modes.js"></script>
+    <link
+      rel="stylesheet"
+      href="../bootstrap-icons-1.10.5/font/bootstrap-icons.min.css"
+    />
+    <link rel="shortcut icon" href="../img/ali.png" type="image/x-icon">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.112.5" />
+    <title>Edit page</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/dark-light.css">
+
+
+    <!-- Custom styles for this template -->
+    <link href="../css/sidebars.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/myStyle.css" />
+  </head>
+  <body>
+    <%- include('../Components/dark-light.ejs') %>
+
+    <main class="d-flex flex-nowrap">
+      <%- include('../Components/sidebar.ejs', {currentPage: "view"}) %>
+
+
+      <section class="w-100">
+        <%- include('../Components/navbar.ejs') %>
+
+        <nav
+          style="width: 88%"
+          class="px-2 mt-4 d-flex flex-wrap justify-content-between"
+          aria-label="breadcrumb"
+        >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <%= obj.fireName %> <%= obj.lastName %>
+            </li>
+          </ol>
+
+          <p class=" ">
+            <span class="fw-medium fs-6">Id :</span> <%= obj._id %>
+          </p>
+        </nav>
+
+        <table
+          style="width: 88%"
+          class="ms-1 table mt-5 table-striped table-bordered"
+        >
+          <thead>
+            <tr>
+              <th scope="col">First Name</th>
+              <th class="fw-normal" scope="col"> <%= obj.fireName %></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Last Name</th>
+              <td><%= obj.lastName %></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Telephone</th>
+              <td><%= obj.phoneNumber %></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Email</th>
+              <td><%= obj.email %></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Gender</th>
+              <td><%= obj.gender %></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Age</th>
+              <td><%= obj.age %></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Country</th>
+              <td><%= obj.country %></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Created on</th>
+              <td><%= moment(obj.createdAt).fromNow();  %></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Last Update</th>
+              <td><%= moment(obj.updatedAt).fromNow();  %></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/sidebars.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
